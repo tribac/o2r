@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "tsc",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/tribac/o2r/issues"
   },
-  "homepage": "https://github.com/tribac/o2r#readme"
+  "homepage": "https://github.com/tribac/o2r#readme",
+  "devDependencies": {
+    "@types/chai": "^3.5.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
